@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "drift-base-0952",
-  description: "make me a snake and ladder game using nextjs please",
+  title: "Snakes & Ladders",
+  description: "Classic Snakes and Ladders board game built with Next.js",
 };
 
 export default function RootLayout({
@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="dark">
+      <body className="min-h-screen antialiased">{children}</body>
     </html>
   );
 }
